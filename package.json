@@ -4,7 +4,8 @@
   "description": "React JS boiler plate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel app/index.html -p 3000",
+    "build": "del /f /q docs && parcel build app/index.html -d docs --public-url ."
   },
   "repository": {
     "type": "git",
